@@ -4,37 +4,227 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Andy Bocanova - UX/UI</title>
+    <title>Andy Bočanová - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
-    <header id="header" style="top: 0px">
-      <a class="logo" href="#">Andy</a>
-      <ul>
-        <li>
-          <a class="active" href="#">Domov</a>
-        </li>
-        <li>
-          <a href="#sec">O mne</a>
-        </li>
-
-        <li>
-          <a href="#sec">Portfólio</a>
-        </li>
-
-        <li>
-          <a href="#footer">Kontakt</a>
-        </li>
-      </ul>
+    <!-- Navigačné menu -->
+    <header>
+      <nav class="top-nav">
+        <ul class="nav-buttons">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Domov</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i> O mne</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-lightbulb"></i> Zručnosti</a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfólio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section>
-      ::before
-      <img src="pozadie0.webp" alt="" id="pozadie" style="top: 0px" />
-      <img src="stars.webp" alt="" id="hviezdy" style="top: 0px" />
-      <img src="clouds.webp" alt="" id="mraky" style="top: 0px" />
-      <img src="m1.webp" alt="" id="hory1" style="top: 0px" />
-      <img src="m2.webp" alt="" id="hory2" style="top: 0px" />
-      <img src="trees.webp" alt="" id="stromy" style="top: 0px" />
-      <img src="fox.webp" alt="" id="liska" style="top: 0px" />
+
+    <header class="parallax" id="home">
+      <img class="parallax-layer layer1" src="pozadie0.webp" alt="Vrstva 1" />
+      <img class="parallax-layer layer2" src="stars.webp" alt="Vrstva 2" />
+      <img class="parallax-layer layer3" src="clouds.webp" alt="Vrstva 3" />
+      <img class="parallax-layer layer4" src="m1.webp" alt="Vrstva 4" />
+      <img class="parallax-layer layer5" src="m2.webp" alt="Vrstva 5" />
+      <img class="parallax-layer layer6" src="trees.webp" alt="Vrstva 6" />
+      <img class="parallax-layer layer7" src="fox.webp" alt="Vrstva 7" />
+      <div class="header-content">
+        <h1>Andrea "Andy" Bočanová</h1>
+        <p>UI/UX Dizajnérka</p>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>Nie som robot. Som UI/UX dizajnérka! 🦊</h2>
+        <p>
+          Ahoj! Volám sa Andrea Bočanová, prezývaná ako Andy. Tvorím UI/UX
+          dizajn, ktorý je nielen funkčný, ale aj zábavný na pohľad. Mojou
+          vášňou je hravosť, ilustrácie a dobrý používateľský zážitok. Tvorím
+          digitálne svety, ktoré majú dušu! Moje portfólio nájdeš nižšie –
+          scrollni, klikni, usmej sa.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="20240128_151215.jpg" alt="Andy portrét" />
+      </div>
     </section>
+
+    <section class="skills" id="skills">
+      <div class="skills-title">
+        <h2>Zručnosti</h2>
+        <img src="fox2.webp" alt="Kreslená líška" />
+      </div>
+      <ul class="skills-content">
+        <li class="skill-item">Blender</li>
+        <li class="skill-item">DaVinci resolve</li>
+        <li class="skill-item">Figma</li>
+        <li class="skill-item">Ilustrácie</li>
+        <li class="skill-item">Krita</li>
+        <li class="skill-item">MS Office</li>
+        <li class="skill-item">UI/UX dizajn</li>
+        <li class="skill-item">ZBrush</li>
+      </ul>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section-title reverse">
+        <h2>Portfólio</h2>
+        <img src="fox1.webp" alt="Kreslená líška 2" />
+      </div>
+      <div class="skills-logos">
+        <a
+          href="https://andyart2.webnode.cz/3d-modely/"
+          target="_blank"
+          aria-label="Blender – Tvorba 3D modelov"
+        >
+          <img
+            src="Blender_logo_no_text.svg.png"
+            alt="Figma logo"
+            title="Blender – tvorba 3D modelov"
+          />
+          <figcaption>Blender</figcaption>
+        </a>
+        <a
+          href="https://andyart2.webnode.cz/figma/"
+          target="_blank"
+          aria-label="Figma – tvorba na UI/UX dizajnu"
+        >
+          <img
+            src="Figma-logo.svg.png"
+            alt="Adobe XD logo"
+            title="Figma – tvorba na UI/UX dizajnu"
+          />
+          <figcaption>Figma</figcaption>
+        </a>
+        <a
+          href="https://andyart2.webnode.cz/kopie-z-galeria22/"
+          target="_blank"
+          aria-label="Inkscape – vektorový program"
+        >
+          <img
+            src="Inkscape_Logo.svg.png"
+            alt="Photoshop logo"
+            title="Inkscape – vektorový program"
+          />
+          <figcaption>Inkscape</figcaption>
+        </a>
+        <a
+          href="https://andyart2.webnode.cz/kopie-z-galeria22/"
+          target="_blank"
+          aria-label="Krita – opensource maľovací program"
+        >
+          <img
+            src="Calligrakrita-base.svg.png"
+            alt="Illustrator logo"
+            title="Krita – opensource maľovací program"
+          />
+          <figcaption>Krita</figcaption>
+        </a>
+        <a
+          href="https://andyart2.webnode.cz/kopie-z-galeria/"
+          target="_blank"
+          aria-label="Ručná kresba"
+        >
+          <img src="smile.png" alt="Illustrator logo" title="Ručná kresba" />
+        </a>
+        <figcaption>Ručná kresba</figcaption>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <img src="fox3.webp" alt="Kreslená líška 3" />
+        <h2>Kontakt</h2>
+      </div>
+      <div class="contact-info">
+        <p>
+          <i class="fas fa-envelope icon"></i>
+          <strong>Email:</strong>
+          <a href="mailto:tvoje@email.com">andy.bocanova@gmail.com</a>
+        </p>
+
+        <p>
+          <i class="fas fa-phone icon"></i>
+          <strong>Telefón:</strong>
+          <a href="tel:+420725433500">+420 725 433 500</a>
+        </p>
+
+        <p>
+          <i class="fab fa-linkedin icon"></i>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/tvoje-meno" target="_blank"
+            >linkedin.com/in/tvoje-meno</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-instagram icon"></i>
+          <strong>Instagram:</strong>
+          <a href="https://www.instagram.com/tvojprofil" target="_blank"
+            >@tvojprofil</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const layers = document.querySelectorAll(".parallax-layer");
+        layers.forEach((layer, index) => {
+          const speed = (index + 1) * 0.2;
+          layer.style.transform = `translateY(${window.scrollY * speed}px)`;
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
+
+  <footer class="custom-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#home">Domov</a></li>
+        <li><a href="#about">O mne</a></li>
+        <li><a href="#skills">Zručnosti</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <p class="footer-quote">🦊 S láskou vytvorené s kódom a fantáziou. 🦊</p>
+    <p class="footer-rights">© 2025 Andrea Bočanová. Všetky práva vyhradené.</p>
+  </footer>
 </html>
