@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Poppins";
   background-color: #041836;
   color: white;
   line-height: 1.6;
@@ -44,11 +44,18 @@ header.parallax {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .header-content p {
+  width: 15%;
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  background: rgba(212, 255, 252, 0.29);
+  border-radius: 18px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(212, 255, 252, 0.3);
 }
 .header-content .btn {
-  background: orange;
+  background: #ff9f1c;
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
   border: none;
@@ -108,7 +115,7 @@ header.parallax {
 }
 .nav-links li a {
   text-decoration: none;
-  color: #ff914d;
+  color: #ff9f1c;
   font-weight: bold;
   font-size: 1.1rem;
   display: flex;
@@ -120,7 +127,7 @@ header.parallax {
 }
 
 section {
-  padding: 6rem 1.5rem;
+  padding: 2rem;
   max-width: 1200px;
   margin: auto;
   font-size: 1.2rem;
@@ -150,17 +157,13 @@ section {
 }
 .about-photo img {
   width: 450px;
+  border-radius: 15px;
   height: auto;
   object-fit: cover;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  border: 5px solid #ff9b21;
+  border: 5px solid #ff9f1c;
 }
 
-.skills,
-.portfolio,
-.contact {
-  text-align: center;
-}
 .skills .tags {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +190,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    padding: 10rem 3rem;
+    padding: 4rem 3rem;
   }
   .about-text h2 {
     font-size: 3rem;
@@ -197,167 +200,188 @@ section {
   }
 }
 
-.skills {
+.skills-portfolio-intro {
+  color: #fff;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 6rem 2rem;
-  gap: 2rem;
-}
-.skills h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-}
-.skills-content {
-  list-style: none;
-  padding: 0;
-  margin: 2rem auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
   justify-content: center;
-  font-size: 1.2rem;
-}
-.skill-item {
-  background-color: #ffa200;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 1.4rem;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.skill-item:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.skills-drawing {
-  max-width: 300px;
-  width: 100%;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.skills-drawing img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.skills-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-.skills-title h2 {
-  font-size: 2.8rem;
-  margin: 0;
-}
-.skills-title img {
-  max-height: 200px;
-  width: auto;
-}
-
-.section-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-.section-title.reverse {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-}
-.section-title h2 {
-  font-size: 2.8rem;
-  margin: 0;
-}
-.section-title img {
-  max-height: 200px;
-  width: auto;
-}
-
-.skills-logos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2.5rem;
-}
-.skills-logos img {
-  max-height: 200px;
-  width: auto;
-  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
-  border-radius: 12px;
-}
-.skills-logos img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.1) saturate(1.2);
-}
-
-.portfolio-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.portfolio-title h2 {
-  font-size: 2.5rem;
-  color: #ff914d;
-}
-
-.portfolio-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
   padding: 1rem;
 }
 
-.portfolio-gallery figure {
-  text-align: center;
-  max-width: 150px;
-}
-
-.portfolio-gallery img {
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
   width: 100%;
+}
+
+.intro-fox img {
+  width: 300px;
+  max-width: 100%;
   height: auto;
-  transition: transform 0.3s;
 }
 
-.portfolio-gallery img:hover {
-  transform: scale(1.1);
-}
-
-.portfolio figcaption {
-  margin-top: 0.5rem;
+.intro-text h2 {
+  font-size: 3rem;
   font-weight: bold;
   color: #ffffff;
+  text-align: right;
 }
 
-@media (max-width: 600px) {
-  .portfolio-gallery {
+.portfolio-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #041836;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.portfolio-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.portfolio-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.portfolio-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-description {
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.portfolio-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-img img {
+  max-width: 250px;
+  height: auto;
+}
+
+.portfolio-img-figma {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-img-figma img {
+  max-width: 150px;
+  height: auto;
+}
+
+.portfolio-img-vs {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-img-vs img {
+  max-width: 350px;
+  height: auto;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff9f1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.portfolio-btn:hover {
+  background-color: #d75c00;
+}
+
+@media (max-width: 768px) {
+  .portfolio-block,
+  .portfolio-block.reverse {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio-img {
+    margin-bottom: 1rem;
   }
 }
 
+.Kontakty {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.kontakty-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.intro-fox2 img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.kontakty-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: right;
+}
+
+.kontakty-container {
+  flex-direction: row-reverse;
+}
+
 .contact-info {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 70px;
+  text-align: left;
   font-size: 1.2rem;
   line-height: 2;
+  text-align: left;
+  border-bottom: 2rem;
 }
+
 .contact-info a {
   color: #ff914d;
   text-decoration: none;
@@ -398,7 +422,7 @@ section {
 
 .footer-nav a {
   text-decoration: none;
-  color: #ff914d;
+  color: #ff9f1c;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -408,7 +432,7 @@ section {
 }
 
 .footer-quote {
-  color: #ff914d;
+  color: #ff9f1c;
   font-style: italic;
   margin-bottom: 0.5rem;
 }

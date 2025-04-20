@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -26,10 +30,9 @@
             <a href="#about"><i class="fas fa-user"></i> O mne</a>
           </li>
           <li>
-            <a href="#skills"><i class="fas fa-lightbulb"></i> Zručnosti</a>
-          </li>
-          <li>
-            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfólio</a>
+            <a href="#skills"
+              ><i class="fas fa-lightbulb"></i> Zručnosti a portfolio</a
+            >
           </li>
           <li>
             <a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a>
@@ -64,110 +67,154 @@
         </p>
       </div>
       <div class="about-photo">
-        <img src="20240128_151215.jpg" alt="Andy portrét" />
+        <img src="mee.webp" alt="Andy portrét" />
       </div>
     </section>
 
-    <section class="skills" id="skills">
-      <div class="skills-title">
-        <h2>Zručnosti</h2>
-        <img src="fox2.webp" alt="Kreslená líška" />
+    <section class="skills-portfolio-intro">
+      <div class="intro-container">
+        <div class="intro-fox">
+          <img src="fox2.webp" alt="Líška" />
+        </div>
+        <div class="intro-text">
+          <h2>Dovednosti a portfólio</h2>
+        </div>
       </div>
-      <ul class="skills-content">
-        <li class="skill-item">Blender</li>
-        <li class="skill-item">DaVinci resolve</li>
-        <li class="skill-item">Figma</li>
-        <li class="skill-item">Ilustrácie</li>
-        <li class="skill-item">Krita</li>
-        <li class="skill-item">MS Office</li>
-        <li class="skill-item">UI/UX dizajn</li>
-        <li class="skill-item">ZBrush</li>
-      </ul>
     </section>
 
-    <section class="portfolio" id="portfolio">
-      <div class="section-title reverse">
-        <h2>Portfólio</h2>
-        <img src="fox1.webp" alt="Kreslená líška 2" />
+    <section>
+      <div class="portfolio-block">
+        <div class="portfolio-text">
+          <h3>FIGMA</h3>
+          <p class="portfolio-description">
+            Vo Figme intuitívne navrhujem používateľské rozhrania a interaktívne
+            prototypy, ktoré sú prístupné a estetické. Je to môj hlavný nástroj
+            pre UI/UX dizajn.
+          </p>
+          <a href="https://andyart2.webnode.cz/figma/" class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img-figma">
+          <img src="Figma-logo.svg.png" alt="Figma logo" />
+        </div>
       </div>
-      <div class="skills-logos">
-        <a
-          href="https://andyart2.cms.webnode.cz/davinci-resolve/"
-          target="_blank"
-          aria-label="DaVinci Resolve"
-        >
-          <img
-            src="DaVinci_Resolve_Studio.webp"
-            alt="DaVinci Resolve Studio logo"
-            title="DaVinci Resolve Studio – tvorba videí"
-          />
-          <figcaption>DaVinci Resolve Studio</figcaption>
-        </a>
+    </section>
 
-        <a
-          href="https://andyart2.webnode.cz/3d-modely/"
-          target="_blank"
-          aria-label="Blender – Tvorba 3D modelov"
-        >
-          <img
-            src="Blender_logo_no_text.svg.png"
-            alt="Figma logo"
-            title="Blender – tvorba 3D modelov"
-          />
-          <figcaption>Blender</figcaption>
-        </a>
-        <a
-          href="https://andyart2.webnode.cz/figma/"
-          target="_blank"
-          aria-label="Figma – tvorba na UI/UX dizajnu"
-        >
-          <img
-            src="Figma-logo.svg.png"
-            alt="Adobe XD logo"
-            title="Figma – tvorba na UI/UX dizajnu"
-          />
-          <figcaption>Figma</figcaption>
-        </a>
-        <a
-          href="https://andyart2.webnode.cz/kopie-z-galeria22/"
-          target="_blank"
-          aria-label="Inkscape – vektorový program"
-        >
-          <img
-            src="Inkscape_Logo.svg.png"
-            alt="Photoshop logo"
-            title="Inkscape – vektorový program"
-          />
-          <figcaption>Inkscape</figcaption>
-        </a>
-        <a
-          href="https://andyart2.webnode.cz/kopie-z-galeria22/"
-          target="_blank"
-          aria-label="Krita – opensource maľovací program"
-        >
-          <img
-            src="Calligrakrita-base.svg.png"
-            alt="Illustrator logo"
-            title="Krita – opensource maľovací program"
-          />
-          <figcaption>Krita</figcaption>
-        </a>
-        <a
-          href="https://andyart2.webnode.cz/kopie-z-galeria/"
-          target="_blank"
-          aria-label="Ručná kresba"
-        >
-          <img src="smile.png" alt="Illustrator logo" title="Ručná kresba" />
-        </a>
-        <figcaption>Ručná kresba</figcaption>
+    <section>
+      <div class="portfolio-block reverse">
+        <div class="portfolio-text">
+          <h3>VISUAL STUDIO</h3>
+          <p class="portfolio-description">
+            V programe Visual Studio sa učím pracovať s jazykmi HTML, CSS.
+            Pomocou týchto jazykov som vytvorila túto stránku.
+          </p>
+          <a
+            href="https://business-card-seven-hazel.vercel.app/"
+            class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img-vs">
+          <img src="vs.webp" alt="Visual studio logo" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="portfolio-block">
+        <div class="portfolio-text">
+          <h3>KRITA A INKSAPE</h3>
+          <p class="portfolio-description">
+            Krita je open-source program, ktorý je skvelý na tvorenie digitálnej
+            kresby, maľby či tvorby storyboardu. Inkscape je taktiež open-source
+            program, zameraný na vektorovú grafiku. Obe programy využívam
+            namiesto Adobe, nakoľko sú jednoduhšie a najmä zadarmo.
+          </p>
+          <a
+            href="https://andyart2.webnode.cz/kopie-z-galeria22/"
+            class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img">
+          <img src="Calligrakrita-base.svg.png" alt="Krita logo" />
+          <img src="Inkscape_Logo.svg.png" alt="Inkscape logo" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="portfolio-block reverse">
+        <div class="portfolio-text">
+          <h3>DAVINCI RESOLVE</h3>
+          <p class="portfolio-description">
+            V DaVinci Resolve tvorím videa, ktoré majú rôzne animačné prvky,
+            titulky alebo hudbu.
+          </p>
+          <a
+            href="https://andyart2.webnode.cz/davinci-resolve/"
+            class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img">
+          <img src="DaVinci_Resolve_Studio.webp" alt="DaVinci Resolve logo" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="portfolio-block">
+        <div class="portfolio-text">
+          <h3>BLENDER</h3>
+          <p class="portfolio-description">
+            Blenderom sa zaoberám, keď potrebujem tvoriť 3D modely a následne
+            ich zanimovať, a vytvárať rôzne scénky. Jeho výhodou je, že je
+            zadarmo.
+          </p>
+          <a href="https://andyart2.webnode.cz/3d-modely/" class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img">
+          <img src="Blender_logo_no_text.svg.png" alt="Blender logo" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="portfolio-block reverse">
+        <div class="portfolio-text">
+          <h3>KRESBA, ILUSTRÁCIA A TVORBA</h3>
+          <p class="portfolio-description">
+            V kresbe a tvorbe sa nachádzajú rôzne veci ako je ručná kresba a
+            maľba, cosplay ale i make-up.
+          </p>
+          <a
+            href="https://andyart2.webnode.cz/kopie-z-galeria/"
+            class="portfolio-btn"
+            >Portfólio</a
+          >
+        </div>
+        <div class="portfolio-img">
+          <img src="smile.png" alt="kresba dievčaťa logo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="Kontakty">
+      <div class="kontakty-container">
+        <div class="intro-fox2">
+          <img src="fox3.webp" alt="Líška" />
+        </div>
+        <div class="kontakty-text">
+          <h2>Kontakty</h2>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="section-title">
-        <img src="fox3.webp" alt="Kreslená líška 3" />
-        <h2>Kontakt</h2>
-      </div>
       <div class="contact-info">
         <p>
           <i class="fas fa-envelope icon"></i>
@@ -184,15 +231,17 @@
         <p>
           <i class="fab fa-linkedin icon"></i>
           <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/tvoje-meno" target="_blank"
-            >linkedin.com/in/tvoje-meno</a
+          <a
+            href="https://www.linkedin.com/in/andrea-bo%C4%8Danov%C3%A1-47a72a194/"
+            target="_blank"
+            >linkedin.com/in/Andrea-Bočanová</a
           >
         </p>
         <p>
           <i class="fab fa-instagram icon"></i>
           <strong>Instagram:</strong>
-          <a href="https://www.instagram.com/tvojprofil" target="_blank"
-            >@tvojprofil</a
+          <a href="https://www.instagram.com/andykitsune/" target="_blank"
+            >@andykitsune</a
           >
         </p>
       </div>
@@ -232,12 +281,11 @@
       <ul>
         <li><a href="#home">Domov</a></li>
         <li><a href="#about">O mne</a></li>
-        <li><a href="#skills">Zručnosti</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#skills">Zručnosti a portfolio</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
-    <p class="footer-quote">🦊 S láskou vytvorené s kódom a fantáziou. 🦊</p>
+    <p class="footer-quote">🦊 Vytvorené s láskou, kódom a fantáziou. 🦊</p>
     <p class="footer-rights">© 2025 Andrea Bočanová. Všetky práva vyhradené.</p>
   </footer>
 </html>
