@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,28 +17,81 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer>
+      function toggleMenu() {
+        document.querySelector(".nav-buttons").classList.toggle("active");
+      }
+
+      function toggleLanguage() {
+        document.documentElement.lang =
+          document.documentElement.lang === "sk" ? "en" : "sk";
+        document
+          .querySelectorAll(".sk")
+          .forEach(
+            (el) =>
+              (el.style.display =
+                document.documentElement.lang === "sk" ? "block" : "none")
+          );
+        document
+          .querySelectorAll(".en")
+          .forEach(
+            (el) =>
+              (el.style.display =
+                document.documentElement.lang === "en" ? "block" : "none")
+          );
+      }
+    </script>
   </head>
 
   <body>
     <!-- Navigačné menu -->
     <header>
       <nav class="top-nav">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-buttons">
           <li>
-            <a href="#home"><i class="fas fa-home"></i> Domov</a>
-          </li>
-          <li>
-            <a href="#about"><i class="fas fa-user"></i> O mne</a>
-          </li>
-          <li>
-            <a href="#skills-portfolio-intro"
-              ><i class="fas fa-lightbulb"></i> Zručnosti a portfolio</a
+            <a href="#home"
+              ><i class="fas fa-home"></i> <span class="sk">Domov</span
+              ><span class="en" style="display: none">Home</span></a
             >
           </li>
           <li>
-            <a href="#Kontakty"><i class="fas fa-envelope"></i> Kontakt</a>
+            <a href="#about"
+              ><i class="fas fa-user"></i> <span class="sk">O mne</span
+              ><span class="en" style="display: none">About</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills-portfolio-intro"
+              ><i class="fas fa-lightbulb"></i>
+              <span class="sk">Zručnosti a portfólio</span
+              ><span class="en" style="display: none"
+                >Skills & Portfolio</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fas fa-envelope"></i> <span class="sk">Kontakt</span
+              ><span class="en" style="display: none">Contact</span></a
+            >
           </li>
         </ul>
+        <div class="lang-toggle">
+          <button onclick="toggleLanguage('sk')">
+            <i class="fas fa-flag"></i> SK
+          </button>
+          <button onclick="toggleLanguage('en')">
+            <i class="fas fa-flag-usa"></i> EN
+          </button>
+        </div>
       </nav>
     </header>
 
@@ -49,21 +103,26 @@
       <img class="parallax-layer layer5" src="m2.webp" alt="Vrstva 5" />
       <img class="parallax-layer layer6" src="trees.webp" alt="Vrstva 6" />
       <img class="parallax-layer layer7" src="fox.webp" alt="Vrstva 7" />
-      <div class="header-content">
+      <div class="parallax-content">
         <h1>Andrea "Andy" Bočanová</h1>
-        <p>UI/UX Dizajnérka</p>
+        <p class="sk">UI/UX Dizajnérka</p>
+        <p class="en" style="display: none">UI/UX Designer</p>
       </div>
     </header>
 
     <section class="about" id="about">
       <div class="about-text">
-        <h2>Nie som robot. Som UI/UX dizajnérka! 🦊</h2>
-        <p>
+        <h2 class="sk">Nie som robot. Som UI/UX dizajnérka! 🦊</h2>
+        <h2 class="en" style="display: none">
+          I am not a robot. I am a UI/UX Designer! 🦊
+        </h2>
+        <p class="sk">
           Ahoj! Volám sa Andrea Bočanová, prezývaná ako Andy. Tvorím UI/UX
-          dizajn, ktorý je nielen funkčný, ale aj zábavný na pohľad. Mojou
-          vášňou je hravosť, ilustrácie a dobrý používateľský zážitok. Tvorím
-          digitálne svety, ktoré majú dušu! Moje portfólio nájdeš nižšie –
-          scrollni, klikni, usmej sa.
+          dizajn, ktorý je nielen funkčný, ale aj zábavný na pohľad.
+        </p>
+        <p class="en" style="display: none">
+          Hello! My name is Andrea Bočanová, known as Andy. I create UI/UX
+          designs that are not only functional but also fun to look at.
         </p>
       </div>
       <div class="about-photo">
@@ -77,37 +136,48 @@
           <img src="fox2.webp" alt="Líška" />
         </div>
         <div class="intro-text">
-          <h2>Dovednosti a portfólio</h2>
+          <h2 class="sk">Dovednosti a portfólio</h2>
+          <h2 class="en" style="display: none">Skills & Portfolio</h2>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block">
         <div class="portfolio-text">
           <h3>FIGMA</h3>
-          <p class="portfolio-description">
+          <p class="sk">
             Vo Figme intuitívne navrhujem používateľské rozhrania a interaktívne
             prototypy, ktoré sú prístupné a estetické. Je to môj hlavný nástroj
             pre UI/UX dizajn.
+          </p>
+          <p class="en" style="display: none">
+            In Figma, I intuitively design user interfaces and interactive
+            prototypes that are accessible and aesthetic. It's my main tool for
+            UI/UX design.
           </p>
           <a href="https://andyart2.webnode.cz/figma/" class="portfolio-btn"
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img-figma">
           <img src="Figma-logo.svg.png" alt="Figma logo" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block reverse">
         <div class="portfolio-text">
           <h3>VISUAL STUDIO</h3>
-          <p class="portfolio-description">
+          <p class="sk">
             V programe Visual Studio sa učím pracovať s jazykmi HTML, CSS.
             Pomocou týchto jazykov som vytvorila túto stránku.
+          </p>
+          <p class="en" style="display: none">
+            In Visual Studio I am learning to work with HTML, CSS. Using these
+            languages I created this page.
           </p>
           <a
             href="https://business-card-seven-hazel.vercel.app/"
@@ -115,21 +185,28 @@
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img-vs">
           <img src="vs.webp" alt="Visual studio logo" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block">
         <div class="portfolio-text">
           <h3>KRITA A INKSAPE</h3>
-          <p class="portfolio-description">
+          <p class="sk">
             Krita je open-source program, ktorý je skvelý na tvorenie digitálnej
             kresby, maľby či tvorby storyboardu. Inkscape je taktiež open-source
             program, zameraný na vektorovú grafiku. Obe programy využívam
             namiesto Adobe, nakoľko sú jednoduhšie a najmä zadarmo.
+          </p>
+          <p class="en" style="display: none">
+            Krita is an open-source program that is great for creating digital
+            drawings, paintings or storyboards. Inkscape is also an open-source
+            program focused on vector graphics. I use both programs instead of
+            Adobe, as they are easier and especially free.
           </p>
           <a
             href="https://andyart2.webnode.cz/kopie-z-galeria22/"
@@ -137,20 +214,28 @@
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img">
           <img src="Calligrakrita-base.svg.png" alt="Krita logo" />
+
           <img src="Inkscape_Logo.svg.png" alt="Inkscape logo" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block reverse">
         <div class="portfolio-text">
           <h3>DAVINCI RESOLVE</h3>
-          <p class="portfolio-description">
+
+          <p class="sk">
             V DaVinci Resolve tvorím videa, ktoré majú rôzne animačné prvky,
             titulky alebo hudbu.
+          </p>
+
+          <p class="en" style="display: none">
+            In DaVinci Resolve, I create videos that have various animation
+            elements, subtitles or music.
           </p>
           <a
             href="https://andyart2.webnode.cz/davinci-resolve/"
@@ -158,45 +243,58 @@
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img">
           <img src="DaVinci_Resolve_Studio.webp" alt="DaVinci Resolve logo" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block">
         <div class="portfolio-text">
           <h3>BLENDER</h3>
-          <p class="portfolio-description">
+          <p class="sk">
             Blenderom sa zaoberám, keď potrebujem tvoriť 3D modely a následne
             ich zanimovať, a vytvárať rôzne scénky. Jeho výhodou je, že je
             zadarmo.
+          </p>
+          <p class="en" style="display: none">
+            I use Blender when I need to create 3D models and then to make them
+            interesting, and to create different scenes. Its advantage is that
+            it is free.
           </p>
           <a href="https://andyart2.webnode.cz/3d-modely/" class="portfolio-btn"
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img">
           <img src="Blender_logo_no_text.svg.png" alt="Blender logo" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="portfolio-description">
       <div class="portfolio-block reverse">
         <div class="portfolio-text">
           <h3>KRESBA, ILUSTRÁCIA A TVORBA</h3>
-          <p class="portfolio-description">
+          <p class="sk">
             V kresbe a tvorbe sa nachádzajú rôzne veci ako je ručná kresba a
             maľba, cosplay ale i make-up.
           </p>
+          <p class="en" style="display: none">
+            In drawing and making there are various things like hand drawing and
+            painting, cosplay but also make-up.
+          </p>
+
           <a
             href="https://andyart2.webnode.cz/kopie-z-galeria/"
             class="portfolio-btn"
             >Portfólio</a
           >
         </div>
+
         <div class="portfolio-img">
           <img src="smile.png" alt="kresba dievčaťa logo" />
         </div>
@@ -208,6 +306,7 @@
         <div class="intro-fox2">
           <img src="fox3.webp" alt="Líška" />
         </div>
+
         <div class="kontakty-text">
           <h2>Kontakty</h2>
         </div>
@@ -239,7 +338,9 @@
         </p>
         <p>
           <i class="fab fa-instagram icon"></i>
+
           <strong>Instagram:</strong>
+
           <a href="https://www.instagram.com/andykitsune/" target="_blank"
             >@andykitsune</a
           >
@@ -250,8 +351,10 @@
     <script>
       window.addEventListener("scroll", () => {
         const layers = document.querySelectorAll(".parallax-layer");
+
         layers.forEach((layer, index) => {
           const speed = (index + 1) * 0.2;
+
           layer.style.transform = `translateY(${window.scrollY * speed}px)`;
         });
       });
@@ -280,12 +383,17 @@
     <nav class="footer-nav">
       <ul>
         <li><a href="#home">Domov</a></li>
+
         <li><a href="#about">O mne</a></li>
+
         <li><a href="#skills">Zručnosti a portfolio</a></li>
+
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
+
     <p class="footer-quote">🦊 Vytvorené s láskou, kódom a fantáziou. 🦊</p>
+
     <p class="footer-rights">© 2025 Andrea Bočanová. Všetky práva vyhradené.</p>
   </footer>
 </html>
